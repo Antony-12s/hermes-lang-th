@@ -4594,7 +4594,6 @@
 "sidebar.projects.baseBranchNone": "ไม่พบ branch เลย"
 "sidebar.projects.baseBranchPlaceholder": "ค้นหา branch…"
 "sidebar.projects.branchCreateWorktree": "worktree ใหม่"
-"sidebar.projects.branchOff": "[object Object]"
 "sidebar.projects.branchOpenExisting": "เปิด"
 "sidebar.projects.branchPlaceholder": "เช่น my-feature"
 "sidebar.projects.branchSwitchHome": "สลับหน้าหลัก"

@@ -8536,7 +8536,6 @@
  "desktop::sidebar.projects.newWorktreeTitle": "New worktree",
  "desktop::sidebar.projects.newWorktreeDesc": "Name the branch for this worktree.",
  "desktop::sidebar.projects.branchPlaceholder": "e.g. my-feature",
- "desktop::sidebar.projects.branchOff": "[object Object]",
  "desktop::sidebar.projects.baseBranchPlaceholder": "Search branches…",
  "desktop::sidebar.projects.baseBranchNone": "No branches found",
  "desktop::sidebar.projects.startWorkFailed": "Could not create worktree",

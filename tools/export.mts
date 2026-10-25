@@ -10,7 +10,11 @@ const walk = (node: any, prefix: string) => {
     const path = prefix ? `${prefix}.${k}` : k
     if (typeof v === 'function') {
       const args = Array.from({ length: Math.max(v.length, 0) }, (_, i) => `{${i}}`)
-      try { out[path] = String(v(...args)) } catch { bad.push(path); out[path] = args.join(' ') }
+      // only string-returning formatters can be packed; e.g. branchOff returns {before, after}
+      let result: unknown
+      try { result = v(...args) } catch { result = undefined }
+      if (typeof result === 'string') out[path] = result
+      else bad.push(path)
     } else if (v && typeof v === 'object' && !Array.isArray(v)) walk(v, path)
     else if (typeof v === 'string') out[path] = v
     else bad.push(path)
