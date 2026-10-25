@@ -1,0 +1,7 @@
+name: hermes-lang-th
+version: 1.0.0
+description: Thai language pack for Hermes, cheeky "กวนตีน" edition
+provides_locales:
+  - id: th
+    endonym: ไทย (กวนตีน)
+    rtl: false
