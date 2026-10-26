@@ -5110,7 +5110,7 @@
 "titlebar.hideRightSidebar": "ซ่อนแถบข้างขวาไปซะ"
 "titlebar.hideSidebar": "ซ่อนแถบข้างไปเลย"
 "titlebar.layoutEditor": "ตัวแก้ไขเลย์เอาต์"
-"titlebar.layoutEditorTitle": "ตัวแก้ไขเลย์เอาต์ — คลิก {0} ครั้งเพื่อรีเซ็ตเลย์เอาต์"
+"titlebar.layoutEditorTitle": "ตัวแก้ไขเลย์เอาต์ — {0}+คลิกเพื่อรีเซ็ตเลย์เอาต์"
 "titlebar.muteHaptics": "ปิดสั่น"
 "titlebar.openSettings": "เปิดตั้งค่า"
 "titlebar.openStarmap": "เปิดกราฟความจำ"
