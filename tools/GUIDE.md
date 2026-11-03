@@ -10,7 +10,7 @@ into Thai, in a playful, cheeky "กวนตีน" tone. The user is Thai and 
   Write valid UTF-8 JSON (`ensure_ascii=False`). Work in batches. Write the batches with Python
   (json.load / json.dump) into the output file, not by hand-editing large JSON. Do not ever print the
   whole file.
-- Check: `cd /home/wasakorn/.hermes/cache/scratch/th && python3 check.py NN` must print `0 issues`.
+- Check: `cd /home/wasakorn/.hermes/cache/scratch/th-update && python3 check.py NN` must print `0 issues`.
   Fix everything it reports and rerun until clean.
 - Final answer: one line with the key count and the checker's last line. Nothing else.
 
@@ -30,8 +30,12 @@ into Thai, in a playful, cheeky "กวนตีน" tone. The user is Thai and 
 6. A value that is purely technical (a unit, `{0}s`, `{0} MB`, a format like `{0}/{1}`, a lone symbol)
    may stay unchanged.
 7. Keep length close to the English. Buttons, tabs, menu items and labels must stay SHORT (1-3 words).
-   No jokes inside short labels. Put the humour in longer messages, empty states, tips, loaders,
-   success/error messages.
+   Labels MAY be cheeky: a slangier synonym of about the same length whose action is still obvious
+   (บันทึก->เซฟเลย, เริ่ม->ลุย, หยุด->พอก่อน). Tool names are labels: clear Thai (Terminal->เทอร์มินัล,
+   Read File->อ่านไฟล์, Patch->แพตช์). Never joke in approvals, billing/cards, keys/credentials,
+   delete/reset/uninstall, permissions, input-token lists or shortcuts: exact meaning only.
+   Light swearing (แม่ง/เชี่ย) at most once per long description, never on labels, never aimed at the user.
+   Put the humour in longer messages, empty states, tips, loaders, success/error messages.
 
 ## Tone
 - Casual Thai, friend-to-friend, cheeky. Use particles like เว้ย, โว้ย, วะ, นะจ๊ะ, ซะ, หน่อย, ดิ, ล่ะ.
