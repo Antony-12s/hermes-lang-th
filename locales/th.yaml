@@ -51,6 +51,20 @@
     "outcome_session": "อนุญาตทั้งเซสชันแล้ว"
     "timed_out_no_response": "หมดเวลาแล้ว (ไม่มีคำตอบ)"
     "timeout_denying": "⏱ หมดเวลา — ไม่ให้คำสั่งนี้"
+  "backtrack":
+    "edit_cancelled": "↺ ยกเลิกย้อนแล้ว ไม่มีอะไรหาย ใจเย็น"
+    "editing_hint": "↺ กำลังแก้พรอมต์ {number} — Enter ย้อนมาตรงนี้แล้วส่ง · Esc Esc ยกเลิก"
+    "forked": "⑂ แตกกิ่งก่อนพรอมต์ {number} แล้ว เซสชันเดิม {parent} ยังอยู่ครบ ไม่แตะสักนิด แก้พรอมต์ข้างล่างแล้วกด Enter ส่งได้เลย"
+    "invalid": "(._.) ไม่มีพรอมต์ {value} นะจ๊ะ — เลือก 1 ถึง {total} ดิ"
+    "keys_hint": "ส่องประวัติแชต · ↑↓/jk เลื่อน · ←→/hl ข้ามพรอมต์ · ↵ แก้ · f แตกกิ่ง · esc กลับ"
+    "no_previous": "ไม่มีข้อความก่อนหน้าให้แก้ ว่างเปล่าซะงั้น"
+    "nothing": "(._.) ไม่มีพรอมต์ก่อนหน้าให้ย้อนไปแล้วเว้ย"
+    "prime_hint": "กด esc อีกทีเพื่อแก้ข้อความก่อนหน้า"
+    "rewind_failed": "(x_x) ย้อนไม่สำเร็จ พังซะแล้ว แต่ประวัติไม่ได้เปลี่ยน: {error}"
+    "rewound": "↺ ย้อนไปพรอมต์ {number} แล้ว (เก็บเข้ากรุ {count} ข้อความ) กำลังส่งที่แก้ไป"
+    "target_changed": "(x_x) เซสชันเปลี่ยนไปตั้งแต่เลือกพรอมต์ {number} เลยไม่ได้ลบอะไร ที่แก้ไว้กลับไปอยู่ในช่องพิมพ์แล้ว"
+    "title": "↺ ประวัติแชต — จิ้มพรอมต์ที่จะแก้"
+    "usage": "วิธีใช้: /rewind [N | fork N]"
   "banner":
     "context_minimum": "Hermes ต้องการอย่างน้อย {tokens} โทเคน ทูลสคีมา + system prompt กินพื้นที่ fix ไปเยอะแล้ว"
     "context_too_low": "⚠️  คอนเท็กซ์มีแค่ {tokens} โทเคน — น้อยไปหน่อยสำหรับเอเจนต์ที่ใช้ทูลนะ"
@@ -1243,6 +1257,7 @@
     "battery_on": "ตัวแสดงแบตเตอรี่เปิดอยู่{detail}"
     "battery_state": "ตัวแสดงแบตเตอรี่ {state}{detail}"
     "battery_usage": "วิธีใช้: /battery [on|off|status]"
+    "ctx_fallback": " สำรอง"
     "ctx_pinned": " ปักหมุดไว้"
     "ctx_unknown": "ctx --"
     "goal": "⊙ เป้าหมาย"
@@ -1570,6 +1585,7 @@
     "vault_unlock_body": "เอเจนต์อยากล็อกอินเข้าไซต์ที่มีบันทึกล็อกอินไว้ใน {backend}\nพิมพ์รหัสผ่านหลัก (ซ่อนไว้) เพื่อปลดล็อกให้เซสชันนี้\nEnter บนบรรทัดว่างเพื่อให้มันล็อกต่อไป โมเดลไม่เห็นรหัสผ่านเลย"
     "vault_unlock_title": "\U0001F510 ปลดล็อก {backend}"
     "voice_recording_failed": "อัดเสียงไม่สำเร็จ: {error}"
+    "vscode_images_hint": "VS Code โชว์รูปความละเอียดเต็มตรงนี้ได้นะ: เปิด terminal.integrated.enableImages ในตั้งค่าซะ"
     "welcome": "ยินดีต้อนรับสู่ Hermes Agent! พิมพ์ข้อความมาเลย หรือ /help ถ้างงว่าต้องพิมพ์อะไร"
   "undo":
     "invalid_count": "(._.) จำนวน {value} ใช้ไม่ได้ — ใช้ /undo หรือ /undo N"
@@ -2165,6 +2181,8 @@
     "deadline": "ถ้าไม่ตอบภายใน {window} จะ**ไม่รัน**"
     "default_reason": "คำสั่งอันตราย"
     "header": "Hermes อยากรันคำสั่งที่ต้องขอ OK จากมุงก่อน"
+    "not_requester": "เฉพาะ {requester} เท่านั้นที่ตอบการอนุมัตินี้ได้"
+    "not_requester_admins_only": "เฉพาะแอดมินหรือผู้อนุมัติที่อยู่ในรายชื่อเท่านั้นที่ตอบการอนุมัตินี้ได้"
     "reason_label": "เหตุผลที่ถูกตีธง"
     "smart_deny_heading": "⚠️ **Smart DENY — เจ้าของสั่งยกเว้นเฉพาะงานนี้:**"
     "smart_deny_line": "Smart DENY: เจ้าของสั่งยกเว้นเฉพาะงานเดียวนี้"
@@ -2175,8 +2193,11 @@
     "text_choice_last": ", หรือ {choice}\\n"
     "text_choice_once": "ตอบ `{prefix}approve` เพื่อรันแค่ครั้งนี้"
     "text_choice_session": "`{prefix}approve session` เพื่ออนุมัติแพตเทิร์นนี้ตลอดเซสชันนี้"
+    "text_prompt_deny_only": "พรอมต์ขออนุมัติฉบับเต็มยาวเกินกว่าแพลตฟอร์มนี้รับไหว เลยมีให้กดแค่ ไม่ให้ อย่างเดียว ไปตรวจดูใน CLI หรือแอป Desktop"
     "timed_out_card_body": "{notice}\\n```\\n{command}\\n```"
     "timed_out_notice": "⌛ หมดเวลาขออนุมัติหลัง {window} — คำสั่งนี้ไม่ได้รัน บอกกรูให้ลองอีกครั้งถ้ายังต้องการ หรือเพิ่ม approvals.timeout ใน config.yaml"
+    "truncated_deny_only": "ตัวอย่างถูกย่อ ({total} ตัวอักษร) และแสดงคำสั่งเต็มตรงนี้ไม่ได้ เลยมีให้กดแค่ ไม่ให้ อย่างเดียว ไปตรวจดูใน CLI หรือแอป Desktop"
+    "truncated_full_above": "ตัวอย่างถูกย่อ: คำสั่งเต็ม ({total} ตัวอักษร) อยู่ในข้อความด้านบน"
   "fast":
     "choice_auto": "auto — เร็วแค่ช่วงต้นของทุกรอบ"
     "choice_cold": "cold — เร็วแค่รอบแรกของเซสชันเท่านั้น"
@@ -2680,8 +2701,6 @@
     "setup_image_caption": "BotFather → Bot Settings → Threads Settings"
     "status_enabled": "เปิดใช้ท็อปิกหลายเซสชันของ Telegram อยู่"
     "status_how_to": "ถ้าจะสร้างแชท Hermes ใหม่ เปิด All Messages ด้านบนของบอทนี้ แล้วส่งข้อความอะไรก็ได้ที่นั่น Telegram จะสร้างท็อปิกใหม่ให้"
-    "system_topic_intro": "ท็อปิกระบบสำหรับคำสั่งและสถานะของ Hermes"
-    "system_topic_name": "System"
     "thread_ready": "เปิดใช้ท็อปิกหลายเซสชันของ Telegram อยู่\n\nท็อปิกนี้จะถูกใช้เป็นเซสชัน Hermes แยกเดี่ยว ใช้ /new เพื่อแทนที่เซสชันปัจจุบันของท็อปิกนี้ ถ้าอยากทำงานพร้อมกันหลายสาย เปิด All Messages แล้วส่งข้อความที่นั่นเพื่อสร้างท็อปิกอีกอัน"
     "topics_disabled": "ท็อปิก Telegram ยังไม่เปิดใช้งานสำหรับบอทนี้\n\nวิธีเปิด:\n1. เปิด @BotFather\n2. เลือกบอทของมุง\n3. เปิด Bot Settings → Threads Settings\n4. เปิด Threaded Mode และเช็กว่าให้ผู้ใช้สร้างเธรดใหม่ได้\n\nแล้วส่ง /topic อีกครั้ง"
     "topics_user_disallowed": "ท็อปิก Telegram เปิดใช้งานแล้ว แต่ผู้ใช้สร้างท็อปิกไม่ได้\n\nเปิด @BotFather → เลือกบอท → Bot Settings → Threads Settings แล้วปิด 'Disallow users to create new threads'\n\nแล้วส่ง /topic อีกครั้ง"
@@ -3033,9 +3052,15 @@
       "resolved_fallback": "จัดการแล้ว"
       "resolved_once": "อนุมัติครั้งนี้แล้ว"
       "resolved_session": "อนุมัติสำหรับเซสชันนี้แล้ว"
+    "clarify":
+      "awaiting_typed": "รอ {user} พิมพ์ตอบอยู่… ไม่ต้องรีบ (แต่ก็อย่าช้า)"
+      "other": "✏️ อื่นๆ (พิมพ์ตอบเอง)"
+      "title": "Hermes อยากได้คำตอบหน่อย"
     "media":
       "gif_downgraded": "[GIF ถูกลดเป็นไฟล์แทน]"
       "gif_downgraded_caption": "[GIF ถูกลดเป็นไฟล์แทน]\n{caption}"
+    "picker":
+      "apply_error": "ใช้ตัวเลือกไม่สำเร็จ พังซะงั้น: {error}"
     "update_prompt":
       "answer_no": "✗ ไม่"
       "answer_yes": "✓ ใช่"
@@ -3332,9 +3357,10 @@
     "slash_confirm_always": "\U0001F512 เสมอ"
     "slash_confirm_cancel": "❌ ยกเลิก"
     "slash_confirm_once": "✅ อนุมัติครั้งนี้"
-  "yuanbao":
-    "owner_command_denied": "⚠️ {command} ใช้ได้เฉพาะเจ้าของบอทในโหมดแชทส่วนตัวเท่านั้น"
-    "slow_response_notice": "งานนี้ค่อนข้างซับซ้อน กำลังทำอยู่ รอแป๊บนะ..."
+"shared":
+  "undo_rollback":
+    "list": "↶ ไฟล์ที่เปลี่ยนในเทิร์นที่ undo ไป: {files} สั่ง /rollback เพื่อดูเช็กพอยต์แล้วกู้คืนได้"
+    "more": "+{count} อีก"
 "slash":
   "agents":
     "description": "แสดงเอเจนต์ที่ทำงานอยู่และงานที่กำลังรัน"
@@ -3493,6 +3519,8 @@
     "description": "ลองส่งข้อความล่าสุดใหม่ (ส่งให้เอเจนต์อีกครั้ง)"
   "review":
     "description": "สร้างซับเอเจนต์แยกเพื่อรีวิวงานที่เพิ่งคุยกัน (PR, โค้ด, เอกสาร)"
+  "rewind":
+    "description": "ย้อนไปพรอมต์ก่อนหน้าเพื่อแก้แล้วส่งใหม่ หรือแตกกิ่งจากตรงนั้น (Esc Esc) พูดผิดก็แก้ได้ จบข่าว"
   "rollback":
     "description": "แสดงหรือกู้คืนเช็กพอยต์ไฟล์ระบบ (กู้คืนจะเก็บการแก้ไขของมุงไว้; --all บังคับทับ)"
   "save":
