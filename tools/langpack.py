@@ -56,9 +56,10 @@ def load_thai():
 
 def export():
     WORK.mkdir(parents=True, exist_ok=True)
-    tsx = HA / 'node_modules' / '.bin' / 'tsx'
     english = {}
     for surface, cwd in [('tui', HA / 'ui-tui'), ('desktop', HA / 'apps' / 'desktop')]:
+        # v0.23.1 dropped tsx from the root node_modules; each workspace carries its own.
+        tsx = next(p for p in (cwd / 'node_modules' / '.bin' / 'tsx', HA / 'node_modules' / '.bin' / 'tsx') if p.exists())
         out = WORK / f'en.{surface}.json'
         subprocess.run([str(tsx), str(TOOLS / 'export.mts'), surface, str(out)], cwd=cwd, check=True,
                        env={'PATH': '/usr/bin:/bin', 'HOME': str(Path.home()), 'HA': str(HA)})
